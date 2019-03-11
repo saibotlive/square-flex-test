@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content/> should render content 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa lEnjB"
+  />
+</div>
+`;
+
+exports[`<Content/> should show lightbox 1`] = `
+<div
+  class="lightbox sc-EHOje jKFcDn"
+>
+  <div
+    class="sc-bZQynM kfTwdK"
+  >
+    <div>
+      <img
+        alt="Lorem Ipsum 1"
+        class="sc-htpNat juBNep"
+        src="https://placehold.it/1920x1080"
+      />
+    </div>
+    <div />
+    <div
+      class="sc-bxivhb gSrOLL"
+    >
+      Lorem Ipsum 1
+    </div>
+    <p
+      class="sc-ifAKCX rlLby"
+    >
+      1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    </p>
+  </div>
+  <div
+    class="close-btn sc-htoDjs kmknyU"
+  />
+</div>
+`;
