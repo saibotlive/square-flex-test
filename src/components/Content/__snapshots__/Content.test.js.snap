@@ -1,9 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Content/> should remove lightbox 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa hOuLKQ"
+    >
+      <div
+        class="sc-bwzfXH ebtsyV"
+      >
+        <img
+          alt="Lorem Ipsum 1"
+          class="sc-htpNat juBNep"
+          src="https://placehold.it/1920x1080"
+        />
+        <div
+          class="sc-bxivhb gSrOLL"
+        >
+          Lorem Ipsum 1
+        </div>
+        <p
+          class="sc-ifAKCX rlLby"
+        >
+          1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        </p>
+      </div>
+      <div
+        class="sc-bwzfXH ebtsyV"
+      >
+        <img
+          alt="Lorem Ipsum 2"
+          class="sc-htpNat juBNep"
+          src="https://placehold.it/1920x1080"
+        />
+        <div
+          class="sc-bxivhb gSrOLL"
+        >
+          Lorem Ipsum 2
+        </div>
+        <p
+          class="sc-ifAKCX rlLby"
+        >
+          2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`<Content/> should render content 1`] = `
 <div>
   <div
-    class="sc-bdVaJa lEnjB"
+    class="sc-bdVaJa hOuLKQ"
   />
 </div>
 `;
@@ -13,7 +62,7 @@ exports[`<Content/> should show lightbox 1`] = `
   class="lightbox sc-EHOje jKFcDn"
 >
   <div
-    class="sc-bZQynM kfTwdK"
+    class="sc-bZQynM haRSKv"
   >
     <div>
       <img

@@ -3,7 +3,7 @@
 exports[`<Content/> should render content 1`] = `
 <div>
   <div
-    class="sc-bdVaJa lEnjB"
+    class="sc-bdVaJa hOuLKQ"
   />
 </div>
 `;

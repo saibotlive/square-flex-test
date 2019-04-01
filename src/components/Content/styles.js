@@ -3,49 +3,49 @@ import styled, { createGlobalStyle, keyframes } from 'styled-components';
 export const Container = styled.div`
   position: relative;
   width: 100%;
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  flex: 0 1 auto;
+  flex: 0 1 auto;*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px 5px;
+  padding: 0 5px;
 `;
 
 export const Item = styled.div`
-  flex: 0 0 100%;
-  padding-left: 3px;
-  padding-right: 3px;
-  margin-bottom: 10px;
+  grid-column: span 12;
+
   &:nth-child(n + 10) {
-    flex-basis: 50%;
+    grid-column: span 6;
   }
 
   @media (min-width: 480px) {
     &:nth-child(1) {
-      flex-basis: 100%;
+      grid-column: span 12;
     }
-
     &:nth-child(n + 2):nth-child(-n + 9) {
-      flex-basis: 50%;
+      grid-column: span 6;
     }
-
-    &:nth-child(n + 10) {
-      flex-basis: ${100 / (12 / 4)}%;
+    &:nth-child(n + 10):nth-child(-n + 15) {
+      grid-column: span 4;
     }
   }
 
   @media (min-width: 1024px) {
     &:nth-child(1) {
-      flex-basis: ${100 / (12 / 8)}%;
+      grid-column: span 8;
     }
 
     &:nth-child(n + 2):nth-child(-n + 5) {
-      flex-basis: ${100 / (12 / 4)}%;
+      grid-column: span 4;
     }
 
     &:nth-child(n + 6):nth-child(-n + 9) {
-      flex-basis: ${100 / (12 / 3)}%;
+      grid-column: span 3;
     }
 
-    &:nth-child(n + 10) {
-      flex-basis: ${100 / (12 / 2)}%;
+    &:nth-child(n + 10):nth-child(-n + 15) {
+      grid-column: span 2;
     }
   }
 `;
@@ -123,7 +123,7 @@ export const LightBoxBody = styled.div`
       font-weight: bold;
       margin: 22px;
     }
-    p {
+    ${Body} {
       font-size: 14px;
       margin: 22px;
     }

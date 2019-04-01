@@ -19,10 +19,23 @@ describe('<Content/>', () => {
     const { container } = render(<Content />);
 
     const item = await waitForElement(() => container.querySelectorAll('div')[1]);
-    await fireEvent.click(item);
+    fireEvent.click(item);
+
+    const lightbox = document.body.querySelector('.lightbox');
+    expect(lightbox).toMatchSnapshot();
+  });
+
+  it('should remove lightbox', async () => {
+    const { container } = render(<Content />);
+
+    const item = await waitForElement(() => container.querySelectorAll('div')[1]);
+    fireEvent.click(item);
 
     const lightbox = document.body.querySelector('.lightbox');
 
-    expect(lightbox).toMatchSnapshot();
+    const closeBtn = lightbox.querySelector('.close-btn');
+    fireEvent.click(closeBtn);
+    waitForDomChange(document.body);
+    expect(document.body).toMatchSnapshot();
   });
 });
